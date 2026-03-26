@@ -1,11 +1,17 @@
-<script setup></script>
+<script>
+import TodoHeader from './components/TodoHeader.vue';
+import TodoInput from './components/TodoInput.vue';
+import TodoList from './components/TodoList.vue';
+
+export default {
+  components: { TodoHeader, TodoInput, TodoList },
+};
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="todo">
+    <TodoHeader />
+    <TodoInput />
+    <TodoList />
+  </div>
 </template>
-
-<style scoped></style>
